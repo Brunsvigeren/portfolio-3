@@ -9,11 +9,11 @@ import {
 } from "react-icons/fa";
 import Socials from "../../components/socials/Socials";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className="container hero_container">
       <div className="header_main_wrapper">
-        <h6 className="main_header_title_small">I am Stine.</h6>
+        <h6 className="main_header_title_small">Jeg er Stine</h6>
         <h1 className="main_header_title">BRAUNSCHWEIG</h1>
       </div>
       <div className="hero_icons">
@@ -26,3 +26,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;

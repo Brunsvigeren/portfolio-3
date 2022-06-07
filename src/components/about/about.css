@@ -1,0 +1,38 @@
+.about_content_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+
+.about_profile_text {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: var(--color-blue-text);
+}
+
+.highlight_word {
+  color: var(--color-pink-1);
+}
+
+.profile_picture {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 200px;
+  opacity: 0.9;
+  border: 8px solid var(--color-pink-1);
+}
+
+@media screen and (max-width: 695px) {
+  .about_content_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about_profile_text {
+    margin-bottom: 20px;
+  }
+}

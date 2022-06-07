@@ -56,18 +56,22 @@ const Nav = () => {
         </button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : " "}`}>
           <li>
-            <a onClick={() => closeMenu()} className="nav_link">
-              ABOUT
+            <a onClick={() => closeMenu()} className="nav_link" href="#about">
+              OM MIG
             </a>
           </li>
           <li>
-            <a onClick={() => closeMenu()} className="nav_link">
-              WHAT I DO
+            <a
+              onClick={() => closeMenu()}
+              className="nav_link"
+              href="what-i-do"
+            >
+              HVAD JEG LAVER
             </a>
           </li>
           <li>
-            <a onClick={() => closeMenu()} className="nav_link">
-              CONTACT
+            <a onClick={() => closeMenu()} className="nav_link" href="contact">
+              KONTAKT
             </a>
           </li>
         </ul>
