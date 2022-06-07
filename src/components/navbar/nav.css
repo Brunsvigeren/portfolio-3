@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  width: var(--container-width-lg);
+  color: var(--color-green-1);
+  font-family: "Anton", sans-serif;
+}
+
+.header_icon {
+  font-size: 2.5rem;
+  color: var(--color-pink-1);
+  cursor: pointer;
+}
+
+.navbar.hidden {
+  height: var(--nav-scroll-height);
+  transform: translateY(calc(var(--nav-scroll-height) * -1));
+}
+
+.nav_menu_btn {
+  font-size: 1.7rem;
+  color: var(--color-pink-1);
+  display: none;
+}
+
+.menuNav {
+  display: flex;
+}
+
+.nav_link {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  transition: var(--transition-links);
+  margin-left: 3rem;
+  color: var(--color-pink-1);
+}
+
+a.nav_link:hover {
+  color: var(--color-blue-text);
+}
+
+/* ========= MEDIA QUERIES ========= */
+
+@media screen and (max-width: 1172px) {
+  .nav_menu_btn {
+    display: flex;
+    position: fixed;
+    right: 13%;
+    top: 28px;
+    z-index: 20;
+  }
+
+  .menuNav {
+    overflow-y: scroll;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: 0 auto;
+    background: var(--background-color);
+    height: 100vh;
+    z-index: 18;
+    display: block;
+    transform: translateY(-100vh);
+    transition: 400ms ease-in;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    justify-content: center;
+  }
+
+  .menuNav.showMenu {
+    width: 100%;
+    transform: translateY(0vh);
+  }
+
+  .nav_link {
+    display: block;
+    text-align: center;
+    padding: 40px 20px;
+    margin-left: 0;
+  }
+
+  .menuNav li:first-child {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    width: var(--container-width-md);
+  }
+
+  .nav_menu_btn {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    width: var(--container-width-sm);
+  }
+
+  .nav_menu_btn {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .nav_menu_btn {
+    right: 6%;
+  }
+}

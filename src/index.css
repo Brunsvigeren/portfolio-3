@@ -1,13 +1,77 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&family=Poppins:ital,wght@0,100;0,300;0,800;1,100;1,300;1,800&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --background-color: rgb(113, 122, 206);
+  --color-blue-text: rgb(174, 182, 253);
+  --color-green-dark: rgb(95, 113, 97);
+  --color-pink-1: rgba(237, 152, 237, 0.822);
+  --color-pink-2: rgb(227, 129, 171);
+
+  --nav-height: 80px;
+  --nav-scroll-height: 60px;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --transition-links: all 150ms ease-in-out;
+  --transition-nav: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: var(--background-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 80px;
+  min-height: 100vh;
+  z-index: 5;
+}
+
+a {
+  cursor: pointer;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*=========== MEDIA QUERIES (MEDIUM DEVICES, TABLETS) ===========*/
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/*=========== MEDIA QUERIES (SMALL DEVICES, PHONES) ===========*/
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: var(--container-width-sm);
+  }
 }
