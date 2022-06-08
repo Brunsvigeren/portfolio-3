@@ -25,11 +25,6 @@
   cursor: pointer;
 }
 
-.navbar.hidden {
-  height: var(--nav-scroll-height);
-  transform: translateY(calc(var(--nav-scroll-height) * -1));
-}
-
 .nav_menu_btn {
   font-size: 1.7rem;
   color: var(--color-pink-1);

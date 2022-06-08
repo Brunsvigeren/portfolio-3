@@ -12,6 +12,7 @@
 :root {
   --background-color: rgb(113, 122, 206);
   --color-blue-text: rgb(174, 182, 253);
+  --color-light-green-text: rgba(153, 245, 228, 0.635);
   --color-green-dark: rgb(95, 113, 97);
   --color-pink-1: rgba(237, 152, 237, 0.822);
   --color-pink-2: rgb(227, 129, 171);

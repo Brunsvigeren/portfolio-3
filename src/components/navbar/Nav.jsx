@@ -5,31 +5,6 @@ import { GiSadCrab } from "react-icons/gi";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 const Nav = () => {
-  const [show, setShow] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
-        setShow(false);
-      } else {
-        setShow(true);
-      }
-
-      setLastScrollY(window.scrollY);
-    }
-  };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", controlNavbar);
-
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }
-  }, [lastScrollY]);
-
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleToggle = () => {
@@ -41,7 +16,7 @@ const Nav = () => {
   };
 
   return (
-    <header className={`header ${show && "hidden"}`}>
+    <header className="header">
       <nav className="container navbar">
         <a className="header_icon" href="#">
           <GiSadCrab />
@@ -64,7 +39,7 @@ const Nav = () => {
             <a
               onClick={() => closeMenu()}
               className="nav_link"
-              href="what-i-do"
+              href="#what_i_do"
             >
               HVAD JEG LAVER
             </a>
