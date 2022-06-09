@@ -11,11 +11,12 @@
 
 :root {
   --background-color: rgb(113, 122, 206);
-  --dark-background-color: rgb(97, 106, 183);
-  --pink-background-color: rgba(237, 152, 237, 0.479);
+  --beige-background-color: rgb(218, 212, 207);
+  --light-background-color: rgb(242, 187, 242);
+  --color-grey: rgb(238, 238, 238);
   --color-blue-text: rgb(174, 182, 253);
   --color-light-green-text: rgba(19, 211, 175, 0.932);
-  --color-green-dark: rgb(95, 113, 97);
+  --color-dark-text: rgb(52, 51, 51);
   --color-pink-1: rgba(237, 152, 237, 0.822);
   --color-pink-2: rgb(227, 129, 171);
 
@@ -33,7 +34,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background: var(--background-color);
+  background: var(--color-grey);
 }
 
 html {
@@ -53,7 +54,7 @@ section {
   padding-top: 80px;
   min-height: 100vh;
   z-index: 5;
-  border-top: 1px solid var(--color-pink-1);
+  border-top: 1px solid var(--beige-background-color);
 }
 
 .section_header_container {
@@ -70,12 +71,12 @@ section {
   position: relative;
   font-family: "Anton", sans-serif;
   letter-spacing: 3px;
-  color: var(--color-pink-1);
+  color: var(--color-dark-text);
   justify-content: center;
 }
 
 .section_header_icon {
-  color: var(--color-pink-1);
+  color: var(--beige-background-color);
   margin-right: 15px;
   font-size: 20px;
   display: flex;

@@ -10,11 +10,11 @@
   font-size: 13px;
   font-weight: 600;
   line-height: 1.5em;
-  color: var(--color-blue-text);
+  color: var(--color-dark-text);
 }
 
 .highlight_word {
-  color: var(--color-pink-1);
+  color: var(--color-pink-2);
 }
 
 .profile_picture {
@@ -24,7 +24,7 @@
   margin: 0 auto;
   border-radius: 200px;
   opacity: 0.9;
-  border: 6px solid var(--color-pink-1);
+  border: 6px solid var(--beige-background-color);
 }
 
 @media screen and (max-width: 695px) {

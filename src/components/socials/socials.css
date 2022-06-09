@@ -12,7 +12,7 @@
   content: "";
   width: 1px;
   height: 4rem;
-  background: var(--color-pink-1);
+  background: var(--color-pink-2);
 }
 
 .fixed-email {
@@ -20,7 +20,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
   letter-spacing: 1px;
-  color: var(--color-pink-1);
+  color: var(--color-pink-2);
   display: flex;
   align-items: center;
   gap: 0.7rem;
@@ -33,7 +33,7 @@
   content: "";
   width: 1px;
   height: 4rem;
-  background: var(--color-pink-1);
+  background: var(--color-pink-2);
 }
 
 .header_social_linkedin,
@@ -41,7 +41,8 @@
 .header_social_instagram,
 .header_social_twitter {
   transition: var(--transition-links);
-  color: var(--color-pink-1);
+  color: var(--color-pink-2);
+  opacity: 0.8;
 }
 
 .header_social_linkedin:hover,
@@ -49,7 +50,7 @@
 .header_social_instagram:hover,
 .header_social_twitter:hover {
   transform: translateY(-5px);
-  color: var(--color-blue-text);
+  color: var(--beige-background-color);
 }
 
 /* ================ SOCIAL QUERIES ========== */

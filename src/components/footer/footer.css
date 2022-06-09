@@ -11,10 +11,11 @@
 .footer_icon {
   margin: 0 10px;
   font-size: 20px;
+  opacity: 0.8;
 }
 
 .footer_paragraph {
-  color: var(--color-blue-text);
+  color: var(--color-dark-text);
   font-family: "Courier New", monospace;
   text-align: center;
   font-size: 10px;

@@ -9,7 +9,7 @@
 .main_header_title_small {
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
-  color: var(--color-pink-1);
+  color: var(--color-dark-text);
 }
 
 .main_header_title {
@@ -17,7 +17,7 @@
   font-family: "Anton", sans-serif;
   letter-spacing: 1rem;
   font-size: 3rem;
-  color: var(--color-pink-1);
+  color: var(--color-dark-text);
   z-index: 10;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .hero_icon {
-  color: var(--color-blue-text);
+  color: var(--color-pink-2);
   margin: 0 10px;
   justify-content: center;
   align-items: center;
