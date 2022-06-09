@@ -31,7 +31,7 @@ const Nav = () => {
         </button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : " "}`}>
           <li>
-            <a onClick={() => closeMenu()} className="nav_link" href="#about">
+            <a onClick={() => closeMenu()} className="nav_link" href="#om">
               OM MIG
             </a>
           </li>
@@ -39,13 +39,13 @@ const Nav = () => {
             <a
               onClick={() => closeMenu()}
               className="nav_link"
-              href="#what_i_do"
+              href="#hvad_jeg_laver"
             >
               HVAD JEG LAVER
             </a>
           </li>
           <li>
-            <a onClick={() => closeMenu()} className="nav_link" href="contact">
+            <a onClick={() => closeMenu()} className="nav_link" href="#kontakt">
               KONTAKT
             </a>
           </li>

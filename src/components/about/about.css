@@ -1,6 +1,6 @@
 .about_content_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 10px;
   justify-content: center;
 }
@@ -24,7 +24,7 @@
   margin: 0 auto;
   border-radius: 200px;
   opacity: 0.9;
-  border: 8px solid var(--color-pink-1);
+  border: 6px solid var(--color-pink-1);
 }
 
 @media screen and (max-width: 695px) {

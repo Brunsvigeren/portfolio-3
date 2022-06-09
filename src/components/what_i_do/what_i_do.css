@@ -1,32 +1,33 @@
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .card {
-  background-color: rgb(139, 148, 227);
-  padding: 12px;
+  background: var(--dark-background-color);
+  padding: 25px 35px;
   border-radius: 6px;
-  min-width: 210px;
+  min-width: 312px;
 }
 
 .card_title {
   color: var(--color-pink-1);
-  font-family: "Open sans", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 12px;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 45px;
   letter-spacing: 2px;
 }
 
 .card_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 8px;
   margin-top: 1.5em;
 }
 
@@ -37,16 +38,48 @@
 }
 
 .card_content_inner_icon {
-  color: var(--color-pink-1);
+  color: var(--color-light-green-text);
   margin-right: 5px;
-  opacity: 0.8;
+  opacity: 0.5;
   font-size: 15px;
 }
 
 .card_paragraph {
-  color: var(--color-light-green-text);
+  color: var(--color-blue-text);
   font-weight: 500;
-  font-family: "Open sans", sans-serif;
+  font-family: "DM sans", sans-serif;
   font-size: 13px;
-  letter-spacing: 0.3px;
+}
+
+.card.wid.last_card {
+  display: flex;
+  align-items: center;
+}
+
+.last_card_paragraph {
+  text-align: center;
+  color: var(--color-blue-text);
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+/*=========== MEDIA QUERIES (SMALL DEVICES, PHONES) ===========*/
+
+@media screen and (max-width: 750px) {
+  .cards.wid {
+    justify-content: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    justify-content: center;
+    width: 100%;
+  }
 }

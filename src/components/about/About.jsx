@@ -4,7 +4,7 @@ import { GiKiwiBird } from "react-icons/gi";
 
 const About = () => {
   return (
-    <section id="about" className="container about_container">
+    <section id="om" className="container about_container">
       <div className="section_header_container">
         <GiKiwiBird className="section_header_icon" />
         <h2 className="section_header">OM MIG</h2>
@@ -22,9 +22,9 @@ const About = () => {
           <span className="highlight_word">specialiseret generalist</span> med
           ekspertise i at{" "}
           <span className="highlight_word">få ting til at ske</span>, stærke
-          evner inden for digital medieproduktion og teknisk snilde og
-          interesse. Jeg lærer hurtigt og tilgår enhver ny udfordring som en
-          mulighed for at lære noget nyt.
+          evner inden for digital medieproduktion og teknisk snilde. Jeg er{" "}
+          <span className="highlight_word">nysgerrig</span>, lærer hurtigt og
+          tilgår enhver ny udfordring som en mulighed for at lære noget nyt.
           <br />
           <br />
           Af projekter og arbejde, jeg har beskæftiget mig med, kan blandt andet

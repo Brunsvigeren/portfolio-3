@@ -23,6 +23,11 @@
   font-size: 2.5rem;
   color: var(--color-pink-1);
   cursor: pointer;
+  transition: var(--transition-links);
+}
+
+.header_icon:hover {
+  color: var(--color-blue-text);
 }
 
 .nav_menu_btn {
@@ -40,7 +45,7 @@
   display: flex;
 }
 
-.nav_link {
+a.nav_link {
   font-size: 1.4rem;
   letter-spacing: 1px;
   transition: var(--transition-links);

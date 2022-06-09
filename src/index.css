@@ -11,8 +11,10 @@
 
 :root {
   --background-color: rgb(113, 122, 206);
+  --dark-background-color: rgb(97, 106, 183);
+  --pink-background-color: rgba(237, 152, 237, 0.479);
   --color-blue-text: rgb(174, 182, 253);
-  --color-light-green-text: rgba(153, 245, 228, 0.635);
+  --color-light-green-text: rgba(19, 211, 175, 0.932);
   --color-green-dark: rgb(95, 113, 97);
   --color-pink-1: rgba(237, 152, 237, 0.822);
   --color-pink-2: rgb(227, 129, 171);
@@ -20,6 +22,7 @@
   --nav-height: 80px;
   --nav-scroll-height: 60px;
 
+  --container-width-xl: 60%;
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -37,7 +40,7 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -50,6 +53,7 @@ section {
   padding-top: 80px;
   min-height: 100vh;
   z-index: 5;
+  border-top: 1px solid var(--color-pink-1);
 }
 
 .section_header_container {
@@ -95,6 +99,14 @@ a {
 
 button {
   cursor: pointer;
+}
+
+/*=========== MEDIA QUERIES =============*/
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: var(--container-width-xl);
+  }
 }
 
 /*=========== MEDIA QUERIES (MEDIUM DEVICES, TABLETS) ===========*/
