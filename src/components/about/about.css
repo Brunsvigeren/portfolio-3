@@ -3,6 +3,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 10px;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .about_profile_text {

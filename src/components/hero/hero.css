@@ -10,6 +10,7 @@
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   color: var(--color-dark-text);
+  font-weight: 300;
 }
 
 .main_header_title {
@@ -34,6 +35,31 @@
   justify-content: center;
   align-items: center;
 }
+
+.container_hero_buttons {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.hero_buttons > a {
+  color: var(--beige-background-color);
+  padding: 10px 20px;
+  background-color: var(--color-pink-2);
+  font-size: 12px;
+  margin: 5px;
+  border-radius: 6px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  transition: var(--transition-links);
+}
+
+.hero_buttons:hover {
+  opacity: 0.6;
+}
+
+/* ============== MEDIA QUERIES ============ */
 
 @media screen and (max-width: 750px) {
   .main_header_title {

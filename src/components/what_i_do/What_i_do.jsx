@@ -32,7 +32,7 @@ const What_i_do = () => {
             </div>
             <div className="card_content_inner">
               <BsFillPatchCheckFill className="card_content_inner_icon" />
-              <p className="card_paragraph">Admnistration</p>
+              <p className="card_paragraph">Administration</p>
             </div>
             <div className="card_content_inner">
               <BsFillPatchCheckFill className="card_content_inner_icon" />

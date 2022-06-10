@@ -8,6 +8,7 @@ const Contact = () => {
       <div className="section_header_container">
         <AiOutlineMail className="section_header_icon" />
         <h2 className="section_header">KONTAKT</h2>
+        <div className="contact_content"></div>
       </div>
     </section>
   );
